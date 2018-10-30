@@ -1,9 +1,9 @@
-# HbaseParser
+# hbase-parser
 php的操作类库，通过写sql来来查询Hbase
 ### composer使用
     {
         "require": {
-            "qieangel2013/HbaseParser": "dev-master"
+            "qieangel2013/hbase-parser": "dev-master"
         }
     }
     composer install
