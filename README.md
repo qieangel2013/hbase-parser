@@ -49,8 +49,6 @@ php的操作类库，通过写sql来来查询Hbase
     *  SQL concat_ws
     *  SQL DATE_FORMATE
     *  SQL Having
-### 使用注意事项
-    请在配置项填写es的版本,这样系统不会请求获取版本，这样不会多一次请求,建议配置一下
 ### 交流使用
     qq群：578276199
 ### 项目地址
