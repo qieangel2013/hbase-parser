@@ -1,5 +1,5 @@
 {
-    "name": "qieangel2013/HbaseParser",
+    "name": "qieangel2013/hbase-parser",
     "description": "Hbase php library",
     "type": "library",
     "keywords": ["sql","Hbase","restful"],
