@@ -29,8 +29,8 @@ class HbaseParseModel extends  \Cto\Edu\Pay\Base\ThriftService{
      * @author: qieangel2013 2018/10/26
      * 
      */
-    public static function QuerySinTable($sql){ 
-        return self::Query($sql);
+    public static function QuerySinTable($sql,$column = '51cto'){ 
+        return self::Query($sql,$column);
     }
 
     /**

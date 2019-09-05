@@ -6,7 +6,7 @@
  */
 namespace Cto\Edu\Pay\Base;
 
-define('THRIFTPATH',dirname(dirname(__DIR__)).'/thriftHbase');
+define('THRIFTPATH',dirname(dirname(__DIR__)).'/src');
 require_once( THRIFTPATH.'/lib/Thrift/ClassLoader/ThriftClassLoader.php' );
 require_once 'PayBase.php';
 require_once THRIFTPATH .'/lib/Parse/Parser.php';
@@ -69,9 +69,10 @@ class ThriftService extends HbaseService {
      * @author: qieangel2013 2018/10/26
      * 
      */
-    public static function Query($sql,$attributes=array(),$page=0,$offset=1,$column=''){ 
+    public static function Query($sql,$column='51cto',$attributes=array(),$page=0,$offset=1){ 
         $SqlData=\Parser::parse($sql);
         self::__init();
+        $result = [];
         foreach ($SqlData as $k => $v) {
             switch ($k) {
                 case 'table':
