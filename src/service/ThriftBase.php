@@ -69,7 +69,7 @@ class ThriftService extends HbaseService {
      * @author: qieangel2013 2018/10/26
      * 
      */
-    public static function Query($sql,$attributes=array(),$page=0,$offset=1,$column='51cto'){ 
+    public static function Query($sql,$attributes=array(),$page=0,$offset=1,$column=''){ 
         $SqlData=\Parser::parse($sql);
         self::__init();
         foreach ($SqlData as $k => $v) {
