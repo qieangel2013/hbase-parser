@@ -41,7 +41,7 @@ require_once(dirname(__FILE__) . '/SetProcessor.php');
  */
 class DuplicateProcessor extends SetProcessor {
 
-    public function process($tokens) {
+    public function process($tokens,$token_category = 'REPLACE') {
         return parent::process($tokens, false);
     }
 
